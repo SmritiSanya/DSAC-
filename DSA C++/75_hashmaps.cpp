@@ -23,6 +23,19 @@ int main(){
     cout<<m["mera"]<<endl;
     cout<<m.at("sanya")<<endl;
 
-cout<<"hello"<<endl;
+    //size
+    cout<<m.size()<<endl;
+
+    //to check prescence
+    cout<<m.count("sanya")<<endl;
+
+    m.erase("sanya");
+    cout<<m.size()<<endl;
+
+    for(auto i:m){
+        cout<<i.first<<","<<i.second<<endl;
+    }
+
+    return 0;
 
 }
